@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dataRoot"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/main_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="150dp" />
+
+        <TextView
+            android:id="@+id/movieName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/txtColorTitle"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guidelineItem"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Movie Name" />
+
+        <ImageView
+            android:id="@+id/imageVote"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_round_start_24"
+            app:layout_constraintStart_toStartOf="@id/guidelineItem"
+            app:layout_constraintTop_toBottomOf="@id/movieName"
+            app:tint="@color/iconColor"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/txtColorOne"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/imageVote"
+            app:layout_constraintStart_toEndOf="@id/imageVote"
+            app:layout_constraintTop_toTopOf="@id/imageVote"
+            tools:text="Text Rate" />
+
+        <ImageView
+            android:id="@+id/imageLang"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_round_lang_24"
+            app:layout_constraintStart_toStartOf="@id/guidelineItem"
+            app:layout_constraintTop_toBottomOf="@id/imageVote"
+            app:tint="@color/iconColor"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/lang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/txtColorOne"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/imageLang"
+            app:layout_constraintStart_toEndOf="@id/imageLang"
+            app:layout_constraintTop_toTopOf="@id/imageLang"
+            tools:text="Text Lang" />
+
+        <ImageView
+            android:id="@+id/imageDate"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_round_date_range_24"
+            app:layout_constraintStart_toStartOf="@id/guidelineItem"
+            app:layout_constraintTop_toBottomOf="@id/imageLang"
+            app:tint="@color/iconColor"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/movieDateRelease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/txtColorOne"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/imageDate"
+            app:layout_constraintStart_toEndOf="@id/imageDate"
+            app:layout_constraintTop_toTopOf="@id/imageDate"
+            tools:text="Date Release" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/imageRoot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/dataRoot"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageMovie"
+            android:layout_width="115dp"
+            android:layout_height="161dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/white"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/RoundedImageView"
+            app:srcCompat="@drawable/poster_placeholder" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
