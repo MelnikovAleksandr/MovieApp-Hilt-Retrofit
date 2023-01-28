@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import dagger.hilt.android.AndroidEntryPoint
 import retrofit2.Call
@@ -57,6 +58,13 @@ class MoviesFragment : Fragment() {
                                     recyclerMovies.apply {
                                         layoutManager = LinearLayoutManager(requireContext())
                                         adapter = moviesAdapter
+                                    }
+                                    moviesAdapter.setOnItemClickListener {
+                                        val direction =
+                                            MoviesFragmentDirections.actionMoviesFragmentToMovieDetailsFragment(
+                                                it.id
+                                            )
+                                        findNavController().navigate(direction)
                                     }
                                 }
                             }
