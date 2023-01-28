@@ -8,6 +8,7 @@ fun ImageView.loadImage(url: String) {
     Glide.with(this)
         .load(url)
         .placeholder(R.drawable.poster_placeholder)
+        .error(R.drawable.ic_image_error)
         .into(this)
 }
 

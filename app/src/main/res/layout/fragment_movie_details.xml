@@ -72,34 +72,34 @@
                     android:id="@+id/tvMovieTitle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    tools:text="Movie"
                     android:textAlignment="center"
                     android:textColor="@color/txtColorTitle"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Movie" />
 
                 <TextView
                     android:id="@+id/tvMovieTagLine"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    tools:text="Sub title"
                     android:textAlignment="center"
                     android:textColor="@color/txtColorTitle"
                     android:textSize="12sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tvMovieTitle" />
+                    app:layout_constraintTop_toBottomOf="@+id/tvMovieTitle"
+                    tools:text="Sub title" />
 
                 <TextView
                     android:id="@+id/tvMovieInfo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    tools:text="Movie info:"
+                    android:text="@string/movie_info"
                     android:textColor="@color/iconColor"
                     android:textSize="14sp"
                     android:textStyle="bold"
@@ -111,7 +111,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    tools:text="Release Date:"
+                    android:text="@string/release_date"
                     android:textColor="@color/iconColor"
                     android:textSize="12sp"
                     android:textStyle="bold"
@@ -122,17 +122,17 @@
                     android:id="@+id/tvMovieDateRelease"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="2019"
                     android:textColor="@color/txtColorOne"
                     android:textSize="12sp"
                     app:layout_constraintBaseline_toBaselineOf="@+id/tvMovieDateReleaseTitle"
-                    app:layout_constraintStart_toEndOf="@+id/tvMovieDateReleaseTitle" />
+                    app:layout_constraintStart_toEndOf="@+id/tvMovieDateReleaseTitle"
+                    tools:text="2019" />
 
                 <TextView
                     android:id="@+id/tvMovieRatingTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="Rating: "
+                    android:text="@string/rating"
                     android:textColor="@color/iconColor"
                     android:textSize="12sp"
                     android:textStyle="bold"
@@ -143,17 +143,17 @@
                     android:id="@+id/tvMovieRating"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="8"
                     android:textColor="@color/txtColorOne"
                     android:textSize="12sp"
                     app:layout_constraintBaseline_toBaselineOf="@+id/tvMovieRatingTitle"
-                    app:layout_constraintStart_toEndOf="@+id/tvMovieRatingTitle" />
+                    app:layout_constraintStart_toEndOf="@+id/tvMovieRatingTitle"
+                    tools:text="8" />
 
                 <TextView
                     android:id="@+id/tvMovieRuntimeTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="Runtime: "
+                    android:text="@string/runtime"
                     android:textColor="@color/iconColor"
                     android:textSize="12sp"
                     android:textStyle="bold"
@@ -164,17 +164,17 @@
                     android:id="@+id/tvMovieRuntime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="2.3 h"
                     android:textColor="@color/txtColorOne"
                     android:textSize="12sp"
                     app:layout_constraintBaseline_toBaselineOf="@+id/tvMovieRuntimeTitle"
-                    app:layout_constraintStart_toEndOf="@+id/tvMovieRuntimeTitle" />
+                    app:layout_constraintStart_toEndOf="@+id/tvMovieRuntimeTitle"
+                    tools:text="2.3 h" />
 
                 <TextView
                     android:id="@+id/tvMovieBudgetTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="Budget: "
+                    android:text="@string/budget"
                     android:textColor="@color/iconColor"
                     android:textSize="12sp"
                     android:textStyle="bold"
@@ -185,17 +185,17 @@
                     android:id="@+id/tvMovieBudget"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="130.000"
                     android:textColor="@color/txtColorOne"
                     android:textSize="12sp"
                     app:layout_constraintBaseline_toBaselineOf="@+id/tvMovieBudgetTitle"
-                    app:layout_constraintStart_toEndOf="@+id/tvMovieBudgetTitle" />
+                    app:layout_constraintStart_toEndOf="@+id/tvMovieBudgetTitle"
+                    tools:text="130.000" />
 
                 <TextView
                     android:id="@+id/tvMovieRevenueTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="Revenue: "
+                    android:text="@string/revenue"
                     android:textColor="@color/iconColor"
                     android:textSize="12sp"
                     android:textStyle="bold"
@@ -206,32 +206,32 @@
                     android:id="@+id/tvMovieRevenue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="130,000"
                     android:textColor="@color/txtColorOne"
                     android:textSize="12sp"
                     app:layout_constraintBaseline_toBaselineOf="@+id/tvMovieRevenueTitle"
-                    app:layout_constraintStart_toEndOf="@+id/tvMovieRevenueTitle" />
+                    app:layout_constraintStart_toEndOf="@+id/tvMovieRevenueTitle"
+                    tools:text="130,000" />
 
                 <TextView
                     android:id="@+id/tvMovieOverviewTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    tools:text="Overview :"
+                    android:text="@string/overview"
+                    android:textColor="@color/iconColor"
                     android:textSize="12sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
-                    android:textColor="@color/iconColor"
                     app:layout_constraintTop_toBottomOf="@id/tvMovieRevenueTitle" />
 
                 <TextView
                     android:id="@+id/tvMovieOverview"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/txtColorOne"
                     android:textSize="12sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvMovieOverviewTitle"
-                    android:textColor="@color/txtColorOne" />
+                    app:layout_constraintTop_toBottomOf="@id/tvMovieOverviewTitle" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </ScrollView>

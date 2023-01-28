@@ -41,8 +41,19 @@ class MoviesAdapter @Inject constructor() :
                 movieDateRelease.text = item.release_date
                 val moviePosterURL = POSTER_BASE_URL + item.poster_path
                 imageMovie.loadImage(moviePosterURL)
+                root.setOnClickListener {
+                    onItemClickListener?.let {
+                        it(item)
+                    }
+                }
             }
         }
+    }
+
+    private var onItemClickListener: ((Result) -> Unit)? = null
+
+    fun setOnItemClickListener(listener: (Result) -> Unit) {
+        onItemClickListener = listener
     }
 
     private val differCallBack = object :
